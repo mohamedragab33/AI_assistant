@@ -219,7 +219,7 @@ This project is private and proprietary. All rights reserved.
 ## 📞 Support
 
 For technical support or questions:
-- **Email**: midoo_ragab@btctrading.com
+- **Email**: moha.ragab33@gmail.com
 - **GitHub Issues**: Create an issue in this repository
 
 ---
