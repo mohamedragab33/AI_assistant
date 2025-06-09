@@ -1,0 +1,204 @@
+{
+  "timestamp": "2025-06-09T20:24:02.276098",
+  "summary": {
+    "total": 28,
+    "successful": 27,
+    "failed": 1,
+    "success_rate": 96.42857142857143
+  },
+  "endpoints": {
+    "auth_login": {
+      "status": 200,
+      "success": true,
+      "response_size": 173
+    },
+    "_": {
+      "status": 200,
+      "success": true,
+      "response_size": 1617,
+      "endpoint": "/",
+      "has_data": true
+    },
+    "_health": {
+      "status": 200,
+      "success": true,
+      "response_size": 561,
+      "endpoint": "/health",
+      "has_data": true
+    },
+    "bitcoin_price": {
+      "status": 200,
+      "success": true,
+      "response_size": 83,
+      "endpoint": "/api/bitcoin/price",
+      "has_data": true
+    },
+    "bitcoin_elite-analytics": {
+      "status": 200,
+      "success": true,
+      "response_size": 1140,
+      "endpoint": "/api/bitcoin/elite-analytics",
+      "has_data": true
+    },
+    "bitcoin_comprehensive-analysis": {
+      "status": 200,
+      "success": true,
+      "response_size": 27594,
+      "endpoint": "/api/bitcoin/comprehensive-analysis",
+      "has_data": true
+    },
+    "bitcoin_halving-cycle": {
+      "status": 200,
+      "success": true,
+      "response_size": 2983,
+      "endpoint": "/api/bitcoin/halving-cycle",
+      "has_data": true
+    },
+    "bitcoin_market-regime": {
+      "status": 200,
+      "success": true,
+      "response_size": 1880,
+      "endpoint": "/api/bitcoin/market-regime",
+      "has_data": true
+    },
+    "bitcoin_order-flow": {
+      "status": 200,
+      "success": true,
+      "response_size": 411,
+      "endpoint": "/api/bitcoin/order-flow",
+      "has_data": true
+    },
+    "bitcoin_whale-prediction": {
+      "status": 200,
+      "success": true,
+      "response_size": 1080,
+      "endpoint": "/api/bitcoin/whale-prediction",
+      "has_data": true
+    },
+    "bitcoin_miner-capitulation": {
+      "status": 200,
+      "success": true,
+      "response_size": 1592,
+      "endpoint": "/api/bitcoin/miner-capitulation",
+      "has_data": true
+    },
+    "bitcoin_features": {
+      "status": 200,
+      "success": true,
+      "response_size": 7245,
+      "endpoint": "/api/bitcoin/features",
+      "has_data": true
+    },
+    "bitcoin_hodl-waves": {
+      "status": 200,
+      "success": true,
+      "response_size": 3522,
+      "endpoint": "/api/bitcoin/hodl-waves",
+      "has_data": true
+    },
+    "bitcoin_dominance": {
+      "status": 200,
+      "success": true,
+      "response_size": 2773,
+      "endpoint": "/api/bitcoin/dominance",
+      "has_data": true
+    },
+    "bitcoin_lightning-network": {
+      "status": 200,
+      "success": true,
+      "response_size": 3320,
+      "endpoint": "/api/bitcoin/lightning-network",
+      "has_data": true
+    },
+    "bitcoin_compliance": {
+      "status": 200,
+      "success": true,
+      "response_size": 4067,
+      "endpoint": "/api/bitcoin/compliance",
+      "has_data": true
+    },
+    "signals_multi-timeframe": {
+      "status": 200,
+      "success": true,
+      "response_size": 1872,
+      "endpoint": "/api/signals/multi-timeframe",
+      "has_data": true
+    },
+    "signals_quick-action": {
+      "status": 200,
+      "success": true,
+      "response_size": 138,
+      "endpoint": "/api/signals/quick-action",
+      "has_data": true
+    },
+    "signals_timeframe_15m": {
+      "status": 200,
+      "success": true,
+      "response_size": 759,
+      "endpoint": "/api/signals/timeframe/15m",
+      "has_data": true
+    },
+    "trading_ai-precision_15m": {
+      "status": 200,
+      "success": true,
+      "response_size": 2019,
+      "endpoint": "/api/trading/ai-precision/15m",
+      "has_data": true
+    },
+    "trading_ai-precision_5m": {
+      "status": 200,
+      "success": true,
+      "response_size": 1840,
+      "endpoint": "/api/trading/ai-precision/5m",
+      "has_data": true
+    },
+    "trading_ai-precision_1h": {
+      "status": 200,
+      "success": true,
+      "response_size": 1856,
+      "endpoint": "/api/trading/ai-precision/1h",
+      "has_data": true
+    },
+    "trading_ai-insights": {
+      "status": 200,
+      "success": true,
+      "response_size": 1132,
+      "endpoint": "/api/trading/ai-insights",
+      "has_data": true
+    },
+    "trading_precision-signal_15m": {
+      "status": 200,
+      "success": true,
+      "response_size": 742,
+      "endpoint": "/api/trading/precision-signal/15m",
+      "has_data": true
+    },
+    "trading_enhanced-precision_15m": {
+      "status": 500,
+      "success": false,
+      "response_size": 58,
+      "endpoint": "/api/trading/enhanced-precision/15m"
+    },
+    "database_signals_recent": {
+      "status": 200,
+      "success": true,
+      "response_size": 26984,
+      "endpoint": "/api/database/signals/recent",
+      "has_data": true
+    },
+    "database_performance_stats": {
+      "status": 200,
+      "success": true,
+      "response_size": 344,
+      "endpoint": "/api/database/performance/stats",
+      "has_data": true
+    },
+    "database_ai_training-stats": {
+      "status": 200,
+      "success": true,
+      "response_size": 117,
+      "endpoint": "/api/database/ai/training-stats",
+      "has_data": true
+    }
+  }
+}
