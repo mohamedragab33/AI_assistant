@@ -6,7 +6,7 @@ services:
     source_dir: /
     dockerfile_path: Dockerfile
     instance_count: 1
-    instance_size_slug: basic-s
+    instance_size_slug: basic-xxs
     http_port: 3000
     environment_slug: docker
     routes:
@@ -17,24 +17,11 @@ services:
       - key: NODE_ENV
         value: production
       - key: JWT_SECRET_KEY
-        value: ${JWT_SECRET_KEY}
-      - key: MONGO_ROOT_USERNAME
-        value: ${MONGO_ROOT_USERNAME}
-      - key: MONGO_ROOT_PASSWORD
-        value: ${MONGO_ROOT_PASSWORD}
-      - key: API_BASE_URL
-        value: ${_self.PUBLIC_URL}
-      - key: AUTH_API_BASE_URL
-        value: ${_self.PUBLIC_URL}
+        value: bitcoin_elite_trading_jwt_secret_key_2024_secure_32_chars
       - key: MONGODB_URL
-        value: ${bitcoin-ai-db.DATABASE_URL}
-
-databases:
-  - name: bitcoin-ai-db
-    engine: MONGODB
-    version: "5"
-    production: false
-    cluster_name: bitcoin-ai-cluster
+        value: mongodb+srv://admin:SecureBitcoinAI2024!@cluster0.shv9yzq.mongodb.net/btc_trading?retryWrites=true&w=majority&appName=Cluster0
+      - key: MONGODB_DB
+        value: btc_trading
 
 alerts:
   - rule: DEPLOYMENT_FAILED
