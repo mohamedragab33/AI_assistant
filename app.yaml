@@ -1,0 +1,41 @@
+name: bitcoin-trading-ai
+region: nyc
+
+services:
+  - name: bitcoin-ai-web
+    source_dir: /
+    dockerfile_path: Dockerfile
+    instance_count: 1
+    instance_size_slug: basic-s
+    http_port: 3000
+    environment_slug: docker
+    routes:
+      - path: /
+    health_check:
+      http_path: /health
+    envs:
+      - key: NODE_ENV
+        value: production
+      - key: JWT_SECRET_KEY
+        value: ${JWT_SECRET_KEY}
+      - key: MONGO_ROOT_USERNAME
+        value: ${MONGO_ROOT_USERNAME}
+      - key: MONGO_ROOT_PASSWORD
+        value: ${MONGO_ROOT_PASSWORD}
+      - key: API_BASE_URL
+        value: ${_self.PUBLIC_URL}
+      - key: AUTH_API_BASE_URL
+        value: ${_self.PUBLIC_URL}
+      - key: MONGODB_URL
+        value: ${bitcoin-ai-db.DATABASE_URL}
+
+databases:
+  - name: bitcoin-ai-db
+    engine: MONGODB
+    version: "5"
+    production: false
+    cluster_name: bitcoin-ai-cluster
+
+alerts:
+  - rule: DEPLOYMENT_FAILED
+  - rule: DOMAIN_FAILED 
